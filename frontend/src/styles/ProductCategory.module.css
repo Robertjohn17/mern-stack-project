@@ -1,0 +1,215 @@
+.main {
+  margin-top: 2px;
+  display: flex;
+}
+.container {
+  padding: 20px;
+  width: 100%;
+}
+
+.headingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingContainer h2 {
+  margin-left: 6%;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.addProducts {
+  margin-right: 10%;
+  text-decoration: none;
+  background-color: rgb(15, 15, 226);
+  color: white;
+  padding: 15px;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: transform 0.3 ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.wapper {
+  margin-top: 2%;
+  display: flex;
+  gap: 1px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.productContainer {
+  margin-bottom: 2%;
+  border: none;
+  width: 20%;
+  height: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.188);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+  position: relative;
+  background-color: #e4e3e3c4;
+}
+
+.img {
+  width: 55%;
+  height: 90%;
+  object-fit: scale-down;
+  mix-blend-mode: multiply;
+}
+
+.optionsContainer {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.optionsIcon {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.optionsMenu {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.editOption,
+.deleteOption {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.editOption:hover,
+.deleteOption:hover {
+  background: #f0f0f0;
+}
+
+.editOption {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.deleteOption {
+  color: #e53935;
+}
+
+.name {
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brand {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.stock {
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.lowStock {
+  color: rgb(219, 18, 8);
+}
+
+.price {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.originalPrice {
+  margin-left: 5px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.discount {
+  margin-left: 5px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgb(9, 33, 184);
+}
+
+.confirmAlertOverlay {
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.confirmAlert {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  height: 180px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmAlert h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.confirmAlert p {
+  margin-bottom: 35px;
+}
+
+.confirmAlertButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirmAlert button {
+  background-color: #0a0a0ad4;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.confirmAlert button:hover {
+  background-color: #0a0a0a;
+}
+

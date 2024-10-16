@@ -1,0 +1,15 @@
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.loadingScreen {
+  background-color: #fff; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

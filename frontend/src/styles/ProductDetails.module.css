@@ -1,0 +1,151 @@
+.main {
+  padding-top: 10px;
+  background-color: rgba(219, 217, 217, 0.247);
+}
+
+.container {
+  width: 100%;
+}
+
+.productContainer {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px;
+  display: flex;
+  border: 1px solid;
+  height: 75vh;
+}
+
+.imgContainer {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 90%;
+  object-fit: scale-down;
+  mix-blend-mode: multiply;
+}
+
+.detailsContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-left: 10px;
+}
+
+.detailsContainer::-webkit-scrollbar {
+  width: 0;
+}
+
+.detailsContainer {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.star {
+  margin-top: -10px;
+  font-size: 1.2rem;
+  color: gold;
+}
+
+.stock {
+  margin-top: -10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.lowStock {
+  color: rgb(219, 18, 8);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: -5px;
+}
+
+.originalPrice {
+  margin-left: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: gray;
+  text-decoration: line-through;
+}
+
+.discount {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(9, 33, 184);
+}
+
+.btnContainer {
+  margin-top: 1%;
+  margin-bottom: 3%;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buyBtn,
+.addBtn {
+  padding: 13px;
+  width: 200px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.buyBtn:hover,
+.addBtn:hover {
+  transform: scale(1.1);
+}
+
+.addBtn {
+  background-color: rgb(10, 10, 216);
+  color: white;
+}
+
+.addIcon {
+  margin-top: -5px;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.brand {
+  margin-top: -10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.descriptionContainer {
+  margin-top: 1%;
+  border-top: 2px solid rgb(196, 195, 195);
+  padding-top: 1%;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.description span {
+  font-weight: 700;
+}
+
+.description {
+  text-align: justify;
+}

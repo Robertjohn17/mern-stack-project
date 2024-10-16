@@ -1,0 +1,196 @@
+.containerTwo {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+
+.productContainer {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.products {
+  width: 48%;
+  height: 200px;
+  margin-bottom: 1%;
+  display: flex;
+  border: 1px solid rgba(82, 83, 84, 0.156);
+  text-decoration: none;
+  color: black;
+} 
+
+.imageContainer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(223, 224, 225, 0.845);
+   overflow: hidden;
+}
+
+.img {
+  min-width: 70%;
+  max-width: 70%;
+  height: 70%;
+  object-fit: scale-down;
+  mix-blend-mode: multiply;
+  transition: transform 0.3s ease;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+.productDetails {
+   width: 60%;
+  margin-left: 5px;
+  position: relative;
+}
+
+.productDetails p {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.stock,
+.lowStock {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.lowStock {
+  color: rgb(239, 5, 5);
+}
+
+.price {
+  margin-top: 3%;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.originalPrice,
+.discount {
+  margin-left: 2%;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.originalPrice {
+  color: rgb(126, 121, 121);
+  text-decoration: line-through;
+}
+
+.discount {
+  color: rgb(42, 2, 173);
+}
+
+.editIcon,
+.deleteIcon {
+  position: absolute;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.editIcon {
+  right: 15px;
+  top: 163px;
+  font-size: 1.3rem;
+}
+
+.deleteIcon {
+  right: 40px;
+  top: 165px;
+  font-size: 1.1rem;
+}
+
+.editIcon:hover,
+.deleteIcon:hover {
+  transform: scale(1.2);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  color: rgb(12, 12, 205);
+  text-decoration: none;
+}
+
+.pagination li.active a {
+  background-color: rgb(12, 12, 205);
+  color: white;
+  border: 1px solid rgb(12, 12, 205);
+}
+
+.confirmAlertOverlay {
+  background: rgba(0, 0, 0, 0.66);
+}
+
+.confirmAlert {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  height: 180px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmAlert h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.confirmAlert p {
+  margin-bottom: 35px;
+}
+
+.confirmAlertButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.confirmAlert button {
+  background-color: #0a0a0ad4;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.confirmAlert button:hover {
+  background-color: #0a0a0a;
+}

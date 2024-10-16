@@ -1,0 +1,204 @@
+.main {
+  padding-top: 2%;
+  background-color: rgba(243, 241, 241, 0.529);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper {
+  padding: 15px;
+  background-color: white;
+  margin-left: 2%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.headingContainer {
+  border-bottom: 1px solid rgb(199, 197, 197);
+}
+
+.headingContainer h2 {
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+.totalPrice {
+  position: absolute;
+  top: 50px;
+  right: 18px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.productContainer {
+  padding: 5px;
+  margin-top: 1%;
+  width: 100%;
+  height: 250;
+  display: flex;
+  border-bottom: 1px solid rgb(199, 197, 197);
+}
+
+.imgContainer {
+  width: 20%;
+  height: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 70%;
+  height: 90%;
+  object-fit: scale-down;
+  mix-blend-mode: multiply;
+}
+
+.detailsContainer {
+  width: 70%;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.stock {
+  margin-top: -6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: green;
+}
+
+.lowStock {
+  color: rgb(219, 18, 8);
+}
+
+.brand {
+  margin-top: -6px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.quantityContainer {
+  font-weight: 600;
+}
+
+.quantity {
+  margin-left: 7px;
+  margin-right: 7px;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+}
+
+.priceContainer {
+  margin-left: 5%;
+  position: relative;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.removeBtn {
+  position: absolute;
+  padding: 12px;
+  width: 120px;
+  border: none;
+  background-color: rgb(244, 7, 7);
+  color: white;
+  font-weight: 600;
+  right: -4px;
+  bottom: 0;
+}
+
+.removeIcon {
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.subtotal {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: end;
+  margin-top: 5px;
+}
+
+.subtotal span {
+  margin-left: 2px;
+}
+
+.summaryContainer {
+  background-color: white;
+  margin-left: 2%;
+  width: 24%;
+  height: 330px;
+  padding: 20px;
+}
+
+.summary {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.itemWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemWrapper p {
+  font-weight: 600;
+}
+
+.items span {
+  text-align: end;
+  font-size: 0.9rem;
+}
+
+.span {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.totalN {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.discountN {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: green;
+}
+
+.orderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.order {
+  width: 70%;
+  height: 45px;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: rgb(9, 9, 213);
+  color: white;
+  border: none;
+  &:hover {
+    background-color: rgba(9, 9, 213, 0.578);
+  }
+}

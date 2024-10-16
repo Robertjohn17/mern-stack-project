@@ -1,0 +1,117 @@
+.container {
+  background-color: white;
+  margin-top: 2%;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.container h2 {
+  margin-top: 1.5%;
+  margin-left: 2%;
+  text-align: left;
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  flex-wrap: nowrap;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.dealsContainer {
+  flex: 0 0 auto;
+  width: 20%;
+  height: 350px;
+  margin-left: 20px;
+  text-decoration: none;
+  border: 1px solid rgba(196, 193, 193, 0.905);
+  color: black;
+  box-sizing: border-box;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 90%;
+  height: 90%;
+  object-fit: scale-down;
+  mix-blend-mode: multiply;
+}
+
+.name {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 0 5px;
+  }
+
+  .main {
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dealsContainer {
+    flex: 0 0 50%;
+    width: 50%;
+    margin-left: 5px;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .dealsContainer {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

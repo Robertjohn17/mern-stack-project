@@ -1,0 +1,175 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(138, 137, 137, 0.5);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  height: 80px;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.searchContainer {
+  width: 32%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBoxContainer {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  border: 1px solid rgb(174, 171, 171);
+  border-radius: 5px 0px 0px 5px;
+  border-right: none;
+}
+
+.inputSearch {
+  margin-left: 2px;
+  padding-left: 10px;
+  outline: none;
+  width: 90%;
+  height: 80%;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.iconContainer {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 4px 4px 0px;
+  background-color: rgb(12, 12, 205);
+  color: white;
+  cursor: pointer;
+}
+
+.iconContainer:hover {
+  background-color: rgb(6, 6, 130);
+}
+
+.iconSearch {
+  font-size: 1.5rem;
+}
+
+.profileContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.dialog {
+  position: absolute;
+  margin-left: 63%;
+  margin-top: -21%;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.iconLink {
+  position: relative;
+  color: #555;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.heartIcon {
+  font-size: 1.5rem;
+  margin-left: -10px;
+}
+
+.cartCount {
+  position: absolute;
+  top: -5px;
+  right: -9px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 0.8rem;
+}
+
+.profilePicture {
+  margin-left: -30%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profilePicture:hover {
+  transform: scale(1.2);
+}
+
+.username {
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.dialogLink {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+}
+
+.dialogLink:hover {
+  text-decoration: underline;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  height: 45px;
+  width: 100px;
+  background-color: rgb(12, 12, 205);
+  border-radius: 3px;
+}
+
+.adminName {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: -25px;
+}
+
+
