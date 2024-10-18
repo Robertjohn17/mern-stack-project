@@ -16,6 +16,7 @@ const Register = () => {
   });
 
   const [showPassword, setShowPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState("");
 
   const { username, email, password, isAdmin } = formData;
   const navigate = useNavigate();
@@ -30,6 +31,12 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (password.length <= 6) {
+      setPasswordError("Password must be greater than 6 characters");
+      return; 
+    }
+
     try {
       const response = await axios.post(
         `${serverUrl}/api/user/register`,
@@ -91,6 +98,8 @@ const Register = () => {
               {showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
+          {passwordError && <p className={styles.error}>{passwordError}</p>}{" "}
+          {/* Display password error */}
           {/* <div className={styles.checkboxContainer}>
             <label>
               <input
