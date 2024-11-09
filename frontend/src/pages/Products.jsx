@@ -46,8 +46,6 @@ const Products = () => {
             (a, b) => b.discountedPrice - a.discountedPrice
           );
         }
-
-        // Apply brand and discount filters
         setFilteredProducts(
           fetchedProducts
             .filter((product) =>
