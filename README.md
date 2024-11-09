@@ -45,8 +45,6 @@ Here are some sample screenshots of the application:
 - ![Cart demo](./frontend/src/assets/demoImages/cart.png)
 - ![Payment demo](./frontend/src/assets/demoImages/payment.png)
 
-You can check out the live demo [here](#) (Add a link if available).
-
 ---
 
 ## Installation
@@ -76,8 +74,6 @@ Create a .env file in the backend folder with the following values:
 
 PORT=5000
 JWT_SECRET=rjrobz17ecommerceapp
-EMAIL_USER=robbertjohn62@gmail.com
-EMAIL_PASS=@70rjrobzz17
 
 # Install client dependencies
 
