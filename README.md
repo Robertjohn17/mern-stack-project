@@ -17,6 +17,7 @@ An e-commerce application built with the MERN stack, featuring separate user and
 ## Features
 
 ### User Module
+
 - **Product Browsing**: View, search, and filter products by categories.
 - **Cart and Wishlist Management**: Add items to the cart or wishlist, view cart items, and proceed to checkout.
 - **Demo Payment**: Checkout process includes a simulated payment gateway.
@@ -24,6 +25,7 @@ An e-commerce application built with the MERN stack, featuring separate user and
 - **Profile Management**: Update personal information and view order history.
 
 ### Admin Module
+
 - **CRUD Operations**: Create, read, update, and delete products.
 - **User Management**: View, ban, or delete users.
 - **Order Management**: Track and update the status of orders.
@@ -37,11 +39,11 @@ An e-commerce application built with the MERN stack, featuring separate user and
 
 Here are some sample screenshots of the application:
 
-- ![Home page demo](./src/assets/demoImages/home.png)
-- ![Admin panel demo](./src/assets/demoImages/admin.png)
-- ![Product page demo](./src/assets/demoImages/product.png)
-- ![Cart demo](./src/assets/demoImages/cart.png)
-- ![Payment demo](./src/assets/demoImages/payment.png)
+- ![Home page demo](./frontend/src/assets/demoImages/home.png)
+- ![Admin panel demo](./frontend/src/assets/demoImages/admin.png)
+- ![Product page demo](./frontend/src/assets/demoImages/product.png)
+- ![Cart demo](./frontend/src/assets/demoImages/cart.png)
+- ![Payment demo](./frontend/src/assets/demoImages/payment.png)
 
 You can check out the live demo [here](#) (Add a link if available).
 
@@ -66,6 +68,7 @@ cd ecommerce-app
 ```
 
 # Install server dependencies
+
 cd backend
 npm install
 
@@ -77,10 +80,12 @@ EMAIL_USER=robbertjohn62@gmail.com
 EMAIL_PASS=@70rjrobzz17
 
 # Install client dependencies
+
 cd ../frontend
 npm install
 
 # Database Setup
+
 Since the application uses a local MongoDB database, follow these steps to set it up:
 Install MongoDB: Ensure that MongoDB is installed on your system and running on the default port (27017).
 Import the Database:
@@ -125,8 +130,3 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 ### License
 
 This project is licensed under the MIT License.
-
-
-
-
-
